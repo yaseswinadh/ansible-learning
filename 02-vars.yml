@@ -34,6 +34,14 @@
       vars:
         URL: Inventory.example.com
 
+- name : Facts
+  hosts: localhost
+  tasks:
+    - name: Print Hostname
+      ansible.builtin.debug:
+        msg: Host Name = {{ansible_hostname}}
+
+
 
 
 

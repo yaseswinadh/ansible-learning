@@ -1,7 +1,7 @@
 - name : Play level vars
   hosts: localhost
   vars:
-    URL: Print Helloo
+    URL: Play.example.com
   tasks:
     - name: Print URL
       ansible.builtin.debug:
@@ -15,3 +15,4 @@
      - name: Print URL
        ansible.builtin.debug:
          msg: URL = {{ URL }}
+

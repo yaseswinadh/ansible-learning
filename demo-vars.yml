@@ -1,1 +1,4 @@
-URL: files.example.com
+- name: Demon on Roles
+  hosts: localhost
+  roles:
+    - sample

@@ -41,11 +41,11 @@
       ansible.builtin.debug:
         msg: Host Name = {{ansible_hostname}}, Memory = {{ ansible_memory_mb.real.free }}
 
-- name: Register varaiables
+- name: Register variables
   hosts: localhost
   tasks:
     - name: Run uptime command
-      ansible.builtin.debug: uptime
+      ansible.builtin.shell: uptime
       register: output
     - name: Print Output of shell command
       ansible.builtin.debug:

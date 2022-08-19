@@ -1,5 +1,6 @@
 - name: Hello from Roles
   ansible.builtin.debug:
+    msg: Hello
 
 - name: Print URL
   ansible.builtin.debug:

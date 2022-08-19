@@ -1,8 +1,8 @@
 - name: Hello from role
-  ansible.builtin.debug:
+  ansible builtin debug:
     msg: Hello
 
 - name: Print URL
-  ansible.builtin.debug:
+  ansible builtin debug:
     msg: URL = {{URL}}
 

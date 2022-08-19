@@ -10,7 +10,7 @@
 - name : Vars from files
   hosts: localhost
   vars_files:
-     - demo-vars.yml
+     - 03-roles.yml
   tasks:
      - name: Print URL
        ansible.builtin.debug:
